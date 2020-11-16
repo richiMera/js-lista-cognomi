@@ -1,22 +1,11 @@
-// Lista Cognomi
-// Chiedere all’utente il cognome,
-// inserirlo in un array con altri cognomi (Es: 'Pesce', ‘Castenetto’, 'Passaro', 'Grimaldi', ‘Rossi’, ‘Verdi’, ‘Bianchi’).
-// Stampa la lista ordinata alfabeticamente.
-// Scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova.
-
-
-
-
-
-
 
 var userLastName = prompt("write here your Lastname");
-console.log(userLastName);
+// console.log(userLastName);
 var lastNameList = [ "Davigo", "Parsival", "Onere", "De Magistri", "Berteselli"];
-console.log(lastNameList);
+// console.log(lastNameList);
 
 lastNameList.push(userLastName);
-console.log(lastNameList);
+// console.log(lastNameList);
 
 lastNameList.sort();
 console.log(lastNameList);
@@ -25,31 +14,10 @@ console.log(lastNameList);
 for (var i = 0; i < lastNameList.length; i++) {
 
   lastNameList[i]
-  console.log(lastNameList[i]);
-}
+  // console.log(lastNameList[i]);
+  if (userLastName == lastNameList[i]) {
+    console.log(i);
+    var position = document.getElementById('position').innerHTML = i + 1;
+  }
 
-
-var total = 0;
-var number = 1;
-var i = 0;
-while (i < lastNameList.lenght) {
-  total = total += number;
-
-  i++
-  console.log(total);
 };
-
-// var result = lastNameList += humanPosition;
-// console.log(result);
-// var humanPosition = "";
-//
-// for (var i = 0; i < array.length; i++) {
-//   array[i]
-// }
-// for (var j = 1; j < 7; j++) {
-//   console.log(j);
-// }
-//
-// for (var k = 0; k < lastNameList.length; k++) {
-//
-// }
