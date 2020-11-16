@@ -28,12 +28,16 @@ for (var i = 0; i < lastNameList.length; i++) {
   console.log(lastNameList[i]);
 }
 
-var humanPosition = [];
 
-for (var j = 1; j < 7; j++) {
-  humanPosition.push(j)
-  console.log(humanPosition);
-}
+var total = 0;
+var number = 1;
+var i = 0;
+while (i < lastNameList.lenght) {
+  total = total += number;
+
+  i++
+  console.log(total);
+};
 
 // var result = lastNameList += humanPosition;
 // console.log(result);
